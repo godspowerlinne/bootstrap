@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Mulish", sans-serif;
+    height: 100dvh;
+    overflow: hidden;
+    background-color: #200000;
+    animation: backgroundColorChange 100s linear infinite; 
+}
+
+@keyframes backgroundColorChange {
+    0% {
+        background-color: #000000;
+    }
+    70% {
+        background-color: #fff;
+    }
+    100% {
+        background-color: #200000;
+    }
+}
+
+
+.container {
+    background-color: #000000;
+    margin: auto;
+    text-align: center;
+    padding: 96px 98px;
+    width: 331px;
+    height: 298px;
+    margin-top: 25dvh;
+
+    animation: slideIn 5s ease-in-out;
+
+    &:hover{
+        border: 1.5px solid #0F88E1;
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        border-radius: 7px;
+
+        img {
+            transform: scale(1.1);
+        }
+        h1 {
+            transform: scale(1.1);
+        }
+    }
+
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(100%);
+    }
+    75%{
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+img {
+    width: 41px;
+    height: 48px;
+    border-radius: 14px;
+}
+h1 {
+    width: 155px;
+    height: 50px;
+    font-size: 40px;
+    font-weight: 900;
+    background: linear-gradient(270.18deg, #ED9B05 23.1%, #0F88E1 42.48%, #B4B4B4 78.47%);
+    background-clip: text;
+    color: transparent;
+
+}
