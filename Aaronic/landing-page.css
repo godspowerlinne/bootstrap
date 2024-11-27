@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+    nav {
+        @media (max-width: 768px) {
+            background-color: #000 !important;
+        }
+    }
+    nav li a{
+        font-weight: 500 !important;
+        color: #000 !important;
+        margin-inline: 0.2rem !important;
+    }
+    nav li a:hover{
+        background-color: #ffcc0066;
+        transition: background-color 0.3s ease;
+
+    }
+    nav button {
+        font-weight: 500!important;
+        padding-inline: 25px !important;
+    }
+    .linne{
+        @media (min-width: 1005px)  {
+            display: none !important;
+        }
+    }
+    .linnen{
+        @media (min-width: 1005px)  {
+            position: absolute !important;
+        }
+    }
+    .linnedis {
+        @media (min-width: 1005px) {
+            display: flex !important;
+        }
+    }
+    .Logo img{
+        width: 41px;
+        border-radius: 14px;
+        /* margin-bottom: 1rem; */
+        @media (max-width: 500px ){
+            width: 35px;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    .Logo span {
+        width: 155px;
+        font-size: 40px;
+        font-weight: 900;
+        background: linear-gradient(270.18deg, #ED9B05 23.1%, #0F88E1 42.48%, #B4B4B4 78.47%);
+        background-clip: text;
+        color: transparent;
+        @media (max-width: 500px ){
+            font-size: 25px;
+            width: 100px;
+        }
+    }
+    .Logo{
+        width: 204.83px;
+        height: 50px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-family: "Mulish", sans-serif;
+
+        @media (max-width: 500px ){
+            width: 60%;
+        }
+    }
+    .menuIcon {
+        display: none;
+        @media (min-width: 768px) {
+            display: block;
+        }
+    }
+    .menuicon {
+        display: block;
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+    .offcanvas-header{
+        background-color: #ED9B05;
+        padding: 26px;
+    }
+    .changText li a{
+        font-weight: 500 !important;
+        padding-inline: 2rem !important;
+        background-color: #0F88E1;
+        margin-bottom: 1rem;
+        border-radius: 7px;
+        text-align: center;
+        
+    }
+    .changText li a:hover{
+        background-color: #0F88E1bb;
+        transition: background-color 0.3s ease;
+        box-shadow: 3px 3px 5px #B4B4B4aa;
+
+}
