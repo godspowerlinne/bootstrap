@@ -133,6 +133,12 @@ body{
 
     @media (max-width: 849px) {
         display: block;
+        min-height: 600px;
+    }
+
+    @media (max-width: 350px) {
+        display: block;
+        min-height: 800px;
     }
 }
 #bgImg2{
